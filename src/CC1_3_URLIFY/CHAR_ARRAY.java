@@ -9,7 +9,7 @@ We will use this approach in this problem.The algorithm employs a two-scan appro
 By tripling this number, we can compute how many extra characters we will have in the final string. In the second pass, which is done in
 reverse order, we actually edit the string.When we see a space, we replace it with %20. If there is no space, then we copy the original character.
  */
-public class Question {
+public class CHAR_ARRAY {
     // Assume string has sufficient free space at the end
     public static void replaceSpaces(char[] str, int trueLength) {
         int spaceCount = 0, index, i = 0;
