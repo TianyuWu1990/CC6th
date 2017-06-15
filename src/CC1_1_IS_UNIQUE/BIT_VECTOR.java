@@ -1,6 +1,11 @@
 package CC1_1_IS_UNIQUE;
 
-public class QuestionB { // no other data structures used
+/*
+We can reduce our space usage by a factor of eight by using a bit vector.
+We will assume, in the below code, that the string only uses the lowercase letters
+a through z.This will allow us to use just a single into
+ */
+public class BIT_VECTOR {
 
 	/* Assumes only letters a through z. */
 	public static boolean isUniqueChars(String str) {

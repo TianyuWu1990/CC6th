@@ -1,6 +1,15 @@
 package CC1_1_IS_UNIQUE;
 
-public class QuestionA {
+/*
+The time complexity for this code is O( n), where n is the length ofthe string.
+The space complexity is O( 1). (You could also argue the time complexity is
+O( 1), since the for loop will never iterate through more than 128 characters.}
+ If you didn't want to assume the character set is fixed, you could express the
+ complexity as o(c)spaceand0(min(c, n))or0(c)time,
+ where cisthesizeofthecharacterset.
+ */
+
+public class BOOLEAN_CHAR_SET {
 	public static boolean isUniqueChars(String str) {
 		if (str.length() > 128) { // ASCII regular 128 char, extended has 256
 			return false;

@@ -1,9 +1,20 @@
 package CC1_2_CHECK_PERMUTATION;
 
-public class QuestionA {	
+import java.util.Arrays;
+
+/*
+ Ask whether case sensitive or not? whitespace is significant or not?
+ If two strings are permutations, then we know they have the same characters,
+ but in different orders. There- fore, sorting the strings will put the characters
+ from two permutations in the same order. We just need to compare the sorted versions
+ of the strings.
+ */
+public class SORT_STRING {
+
 	public static String sort(String s) {
+
 		char[] content = s.toCharArray();
-		java.util.Arrays.sort(content);
+		Arrays.sort(content);
 		return new String(content);
 	}
 	
